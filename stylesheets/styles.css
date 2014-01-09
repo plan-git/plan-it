@@ -8,16 +8,36 @@ body { padding-top: 70px; }
   display:block;
  }
 
+.glyphicon-flipped {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
 
 .leaflet-map-pane img {
   max-width: none;
   max-height: none;
 }
 
+#projects_info {
+  font-size: x-small;
+}
+#projects_filter {
+  display: none;
+}
+.dataTables_scrollHead {
+  display: none;
+}
+
 
 #gh svg:hover {
     fill: #000;
 }
+
+/*.btn-custom {
+    .btn-pseudo-states(#1dcc00, #6d0099);
+ }*/
 
 .info {
     padding: 6px 8px;

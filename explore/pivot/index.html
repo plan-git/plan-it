@@ -1,12 +1,18 @@
 ---
 layout: explore
+title: Pivot Table
 category: 'explore'
 ---
+<div class="col-md-12">
     <h1>Pivot Table</h1>
-    <p>Pivot tables are great way to summarize large datasets.
-    <br/><br/>
-    The data for the table below are from the most recent TIP.  It is designed to have many fields that have at least some significant relationships between one another.  Check out the <a href="https://github.com/rjackson/pivot.js/blob/master/README.md">README</a> for more information.  Also feel free to run the spec (found in the link up top), and if you spot any problems let us know so we can fix them.
-    <br/><br/>
+    <p>Pivot tables provide a great way to summarize large datasets.</p>
+    <p>The data for the table below are from the most recent TIP.</p>
+    <p>If you would like to explore data from previous TIP versions, select one from the list:</p>
+    <div class="row">
+    <div class="col-md-2 col-sm-4 col-xs-6">
+      <select class="form-control branch-select"></select>
+    </div>
+    </div>
       <b>To begin:</b>
       <ul>
         <li>Select the fields you would like to display from the Label Fields/Summary Fields drop down.</li>
@@ -66,9 +72,10 @@ category: 'explore'
       </ul>
     </div>
     <hr/>
-    <span style="float:right;">Export <button class="btn btn-default btn-xs" onclick="exportResults('json')" title="Download results in json">json</button> <button class="btn btn-default btn-xs" onclick="exportResults('csv')" title="Download results in csv">csv</button> <button class="btn btn-default btn-xs"  onclick="exportResults('pdf')" disabled>pdf</button></span>
+    <span style="float:right;">Export <button class="btn btn-default btn-xs" onclick="exportResults('json')" title="Download results as json">json</button> <button class="btn btn-default btn-xs" onclick="exportResults('csv')" title="Download results as csv">csv</button> <button class="btn btn-default btn-xs" title="Download results as pdf" onclick="exportResults('pdf')">pdf</button></span>
     <h1>Results</h1>
     <span id="pivot-detail"></span>
 
     <hr/>
     <div id="results"></div>
+    </div>
